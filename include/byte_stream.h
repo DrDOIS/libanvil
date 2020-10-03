@@ -204,6 +204,11 @@ public:
     /*
      * Byte stream input
      */
+    bool operator<<(std::vector<char>&& input);
+
+    /*
+     * Byte stream input
+     */
     bool operator<<(const std::string& input);
 
     /*

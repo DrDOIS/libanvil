@@ -1,3 +1,6 @@
 .DS_Store
 *.sublime-workspace
 *.sublime-project
+build/*
+!build/.gitkeep
+.vscode/*

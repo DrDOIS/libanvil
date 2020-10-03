@@ -27,6 +27,7 @@
 #include "region_file.h"
 #include "Block.h"
 #include "Chunk.h"
+#include <math.h>  /* log2 */
 
 
 class region_file_reader : public region_file {

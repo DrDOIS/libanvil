@@ -69,7 +69,8 @@ bool compound_tag::operator==(const generic_tag& other) {
  * Return a compound tag's data
  */
 std::vector<char> compound_tag::get_data(bool list_ele) {
-    byte_stream stream(byte_stream::SWAP_ENDIAN);
+    int b = byte_stream::SWAP_ENDIAN;
+    byte_stream stream(b);
 
     get_data(list_ele, stream);
 

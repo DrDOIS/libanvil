@@ -91,6 +91,15 @@ bool byte_stream::operator<<(std::vector<char>& input) {
     return true;
 }
 
+bool byte_stream::operator<<(std::vector<char>&& input) {
+
+    // append to the stream
+    buff.insert(buff.begin() + pos, input.begin(), input.end());
+    pos += input.size();
+    numberOfEntries = buff.size();
+    return true;
+}
+
 
 /*
  * Byte stream input
